@@ -1,6 +1,7 @@
 {
     "name": "UKAS POC",
-    "start_url": "/",
+    "start_url": "/PWA-APP-POC/",
+    "scope": "/PWA-APP-POC/",
     "display": "standalone",
     "theme_color": "#0d085c",
     "icons": [
