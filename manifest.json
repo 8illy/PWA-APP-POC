@@ -1,0 +1,13 @@
+{
+    "name": "UKAS POC",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#0d085c",
+    "icons": [
+        {
+            "src": "img/favicon.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+<script>
+	const apCustomerId = 11099;
+	const apPortalId = 59879;
+	const apPortalBaseUrl = `https://portal.ukas.com/router/servlet/Portal?c=${apCustomerId}&p=${apPortalId}`;
+	
+  	function onMessage(event){
+    	if(event.origin=="null"){
+			let data = JSON.parse(event.data);
+			messageHandler(data);
+		}
+	}
+
+	function postMessage(data){
+    	window.opener.postMessage(JSON.stringify(data),"*");
+    }
+	
+	function messageHandler(data){
+		switch(data.action){
+			case "page":{
+				window.location = `${apPortalBaseUrl}&g=${data.pageId}`;
+				break;
+			}
+		}
+	}
+
+    window.addEventListener("message",onMessage,false);
+
+	//if on dashboard, tell the app we are now logged in, so it can tell to redirect to the real page?
+	if({!#PORTAL.cf7W6oobS1SwxoAW3wMm8A.ZDYCQBMWTGKtnm1RiPZVag#id}=={!#PAGE_ID}){
+		postMessage({action:"login"});
+	}
+	
+</script>

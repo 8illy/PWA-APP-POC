@@ -1,0 +1,64 @@
+<html>
+
+	<head>
+		<title>UKAS POC</title>
+		
+		<!-- This one is important for the manifest. -->
+        <meta name="theme-color" content="#0d085c" />
+		<!-- Reference the manifest file; is must for PWA. -->
+        <link rel="manifest" href="manifest.json" />
+		
+		<link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/growl.css">
+        <link rel="stylesheet" href="css/variables.css">
+        
+		
+		<link href="includes/kendo.css" rel="stylesheet"/>
+		<link href="includes/bootstrap.css" rel="stylesheet"/>
+		
+		<script src="includes/jquery.js"></script>
+		<script src="includes/kendo.js"></script>
+		<script src="includes/bootstrap.js"></script>
+		
+		<script src="js/const.js"></script>
+		<script src="js/templates.js"></script>
+        <script src="js/ap.js"></script>
+        <script src="js/utility.js"></script>
+		<script src="js/index.js"></script>
+		
+		<script src="pwa/pwa-handler.js"></script>
+	</head>
+	
+	<body>
+		<div class="container row">
+			<div class="col-1">
+				<div id="sidebar"></div>
+			</div>
+			<div class="col-11">
+				<div class="row headerRow">
+					<div id="logoContainer">
+						<img src="./img/logo.svg" id="logoImg"></img>
+					</div>
+				</div>
+				<div class="row">
+					<div id="rb_fl_infoMessage" class="rbs_msg_container hide" style="">
+						<div id="rb_fl_infoMessageContainer" class="alert alert-success bold">
+							<div class="rb_icon_container"><img  src="./img/success-icon.svg"></div>
+							<button id="rb_fl_msg_close" type="button" class="close"></button>
+							<div class="rb_span_container">
+								<span id="rb_fl_infoMessageTitle">Success!</span>
+								<span id="rb_fl_infoMessageText">"Customer Portal" portal has been updated.</span>
+							</div><div style="clear:both"></div>
+						</div>
+					</div>
+					<div id="appBody">
+					
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</body>
+	
+</html>

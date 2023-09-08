@@ -1,0 +1,12 @@
+html{
+	--ukasPurple : #664396;
+	--ukasGrey : #eee;
+	--ukasBlue : #002060;
+	--ukasGreen : #7cb342;
+	--ukasRed : #E53935;
+	
+	--ukasBackground : white;
+	--sidebarHover : var(--ukasPurple);
+	--sidebarBackground : var(--ukasGrey);
+	
+}

@@ -1,0 +1,116 @@
+
+
+
+
+
+
+
+img.sideBarLogoHover {
+    width: 36px;
+    display:none;
+}
+img.sideBarLogoHover:hover {
+    display:block;
+}
+.activeItem > a > div > img.sideBarLogoHover {
+    display: inline-block !important;
+}
+.activeItem > a > div > img.sideBarLogo {
+    display: none !important;
+}
+
+
+
+.sidebarItem:hover img.sideBarLogoHover {
+    display: inline-block !important;
+}
+.sidebarItem:hover img.sideBarLogo {
+    display: none !important;
+}
+
+#menuwrapper ul li:not(.subMenu) i {
+    margin-top: 5px;
+}
+
+.indicator-right:after{
+   content: "" !important;
+}
+
+#sidebar {
+    text-align: center;
+	width: calc(100vw / 12);
+    background-color: #eee;
+    min-height: calc(100vh - 75px);
+    z-index: 2;
+    padding-bottom: 19%;
+    margin-bottom: 0%;
+    float: left;
+    position: fixed;
+    height: 100%;
+    top: 0px;
+}
+
+#menuwrapper ul,
+#menuwrapper ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#menuwrapper ul li {
+  background-color: #eee;
+  width: 100%;
+  cursor: pointer;
+  text-align:center;
+}
+
+#menuwrapper ul li:not(.subMenu) > a{
+     padding: 10px;
+}
+
+/* We apply the background hover color when user hover the mouse over of the li component */
+#menuwrapper ul li:hover {
+  background-color: var(--ukasPurple);
+  position: relative;
+}
+
+#menuwrapper ul li:hover a {
+    color: white;
+}
+
+/* We apply the link style */
+#menuwrapper ul a li {
+  padding: 5px 15px;
+  color: rgb(102, 102, 102);
+  display: inline-block;
+  text-decoration: none;
+  text-align:center;
+  line-height: 1em;
+  padding-top: 8px;
+}
+
+#menuwrapper ul a:not(.subMenu) {
+  color: rgb(102, 102, 102);
+  text-align: center;
+  padding: 0px;
+  display: block;
+}
+
+.activeItem{
+	background-color: #330072!important;
+}
+
+#menuwrapper>ul>li.activeItem>a{
+	color: #ffffff;
+}
+
+span.siderbarTitle {
+    font-size: 0.7em;
+    line-height: 15px;
+    display: block;
+    margin-top: 4px;
+}
+
+img.sideBarLogo {
+    width: 36px;
+}
